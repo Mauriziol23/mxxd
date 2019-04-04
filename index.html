@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<title>MxxdPrints</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/jpg" href="./assets/logo.png">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  /* Full height image header */
+
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/mac.jpg");
+    min-height: 100%;
+  }
+
+  .Mau-bar .Mau-button {
+    padding: 16px;
+  }
+
+  /* video portion */
+
+  .wrapper {
+    /* height: 100vh; */
+    display: flex;
+    /* align-items: center; */
+    color: #FFF;
+    TEXT-ALIGN: CENTER;
+  }
+
+  section {
+    max-width: 50%;
+    width: 300px;
+    margin: auto;
+    /* PADDING-LEFT: 25%; */
+    /* PADDING-RIGHT: 25%; */
+    text-align: center;
+  }
+
+  /* 
+STOP */
+
+  .video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .video-wrap video,
+  iframe,
+  video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .video-fit {
+    height: 60rem;
+
+  }
+
+  /* @media (max-width:601px) {
+    .video-fit {
+        height:20rem;
+    } */
+
+  @media (max-width:699px) and (min-width: 320px) {
+    .video-fit {
+      height: 25rem;
+    }
+  }
+
+  @media (max-width:1200px) and (min-width: 700px) {
+    .video-fit {
+      height: 35rem;
+    }
+  }
+
+  @media (max-width:1350px) and (min-width: 1201px) {
+    .video-fit {
+      height: 55rem;
+    }
+    @media (max-width:1650px) and (min-width: 1351px) {
+      .video-fit {
+        height: 65rem;
+      }
+    }
+
+  }
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="Mau-top">
+    <div class="Mau-bar Mau-black Mau-card" id="myNavbar">
+      <a href="#home" class="Mau-bar-item Mau-button Mau-wide">
+        <img class="Mau-image Mau-round-small" type="image/png" src="./assets/logo.png" alt="mxxdprintslogo" width="55" height="55">
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="Mau-right Mau-hide-small">
+        <a href="#about" class="Mau-bar-item Mau-button">ABOUT</a>
+        <a href="#value" class="Mau-bar-item Mau-button">VALUE</a>
+        <a href="#work" class="Mau-bar-item Mau-button"> WORK</a>
+        <a href="#team" class="Mau-bar-item Mau-button"> TEAM</a>
+        <a href="#media" class="Mau-bar-item Mau-button"> MEDIA</a>
+        <a href="#contact" class="Mau-bar-item Mau-button"> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="Mau-bar-item Mau-button Mau-right Mau-hide-large Mau-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="Mau-sidebar Mau-bar-block Mau-black Mau-card Mau-animate-left Mau-hide-medium Mau-hide-large" style="display:none"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="Mau-bar-item Mau-button Mau-large Mau-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="Mau-bar-item Mau-button">ABOUT</a>
+    <a href="#value" onclick="w3_close()" class="Mau-bar-item Mau-button">VALUE</a>
+    <a href="#work" onclick="w3_close()" class="Mau-bar-item Mau-button">WORK</a>
+    <a href="#team" onclick="w3_close()" class="Mau-bar-item Mau-button">TEAM</a>
+    <a href="#media" onclick="w3_close()" class="Mau-bar-item Mau-button">MEDIA</a>
+    <a href="#contact" onclick="w3_close()" class="Mau-bar-item Mau-button">CONTACT</a>
+  </nav>
+
+
+
+
+
+
+  <!-- Header with full-height image -->
+  <header class="video-fit Mau-display-container Mau-black" id="home">
+    <section>
+      <div class="video-wrap">
+        <iframe id="otherVideo" src="https://player.vimeo.com/video/309563920?autoplay=1&muted=1&loop=1" frameborder="0" webkitallowfullscreen
+          mozallowfullscreen allowfullscreen></iframe>
+        <!-- <video id="otherVideo" src="./assets/Blending_Traditional.mp4" playsinline autoplay muted loop></video> -->
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <div class="Mau-display-left Mau-text-white" style="padding:48px">
+      <span class="Mau-jumbo Mau-hide-small">The year in Recap: </span>
+      <br>
+      <span class="Mau-xxlarge Mau-hide-large Mau-hide-medium">The year in Recap:</span>
+      <br>
+      <span class="Mau-xxlarge">2019</span>
+
+    </div>
+    </div>
+  </header>
+
+  <!-- 3 small assets Section -->
+  <div class="Mau-container">
+
+  </div>
+
+  <!-- <div class="Mau-row-padding Mau-padding-16 Mau-black Mau-text-white Mau-large">
+    <div class="Mau-half Mau-margin-bottom">
+      <div class="Mau-display-container">
+        <img src="./assets/DJI_0020.jpg" alt="Chi-town" style="width:100%">
+        <span class="Mau-display-bottomleft Mau-padding">Chi-town</span>
+      </div>
+    </div>
+    <div class="Mau-half">
+      <div class="Mau-row-padding" style="margin:0 -16px">
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/barber.jpg" alt="T^3" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">Traditions Barber Parlor 3</span>
+          </div>
+        </div>
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/dress.jpg" alt="LUX" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">LUX</span>
+          </div>
+        </div>
+      </div>
+      <div class="Mau-row-padding" style="margin:0 -16px">
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/hawaii.png" alt="HI" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">Hawaii</span>
+          </div>
+        </div>
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/4wheeler.png" alt="4wheeler" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">Fire-Festival</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- second layer of assets -->
+  <div class="Mau-row-padding Mau-padding-16 Mau-white Mau-text-white Mau-large">
+
+    <div class="Mau-half">
+      <div class="Mau-row-padding" style="margin:0 -16px">
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/Taipei2.jpg" alt="Taipei2" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">Taipei Streets</span>
+          </div>
+        </div>
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/street.jpg" alt="Street" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">Cross Road</span>
+          </div>
+        </div>
+      </div>
+      <div class="Mau-row-padding" style="margin:0 -16px">
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/Taipei.jpg" alt="Taipei" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">Taipei</span>
+          </div>
+        </div>
+        <div class="Mau-half Mau-margin-bottom">
+          <div class="Mau-display-container">
+            <img src="./assets/julianthumbnail.jpg" alt="mustang" style="width:100%">
+            <span class="Mau-display-bottomleft Mau-padding">Mustang</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Mau-half Mau-right Mau-margin-bottom">
+      <div class="Mau-display-container">
+        <img src="./assets/nyc.jpg" alt="nyc" style="width:100%">
+        <span class="Mau-display-bottomleft Mau-padding">NYC</span>
+      </div>
+    </div>
+    <div class="Mau-half">
+      <div class="Mau-row-padding" style="margin:0 -16px">
+        <div class="Mau-half Mau-margin-bottom">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- About Section -->
+
+
+  <div class="Mau-container Mau-darkest-grey" style="padding:128px 16px" id="about">
+    <h3 class="Mau-center Mau-xxlarge">@ MXXDPRINTS </h3>
+    <p class="Mau-center Mau-large"> We believe great ideas need a voice. We believe that the best music has yet to be made. We believe the greatest leaders
+      have yet to rise. And that our future is brighter than our past. The way we show this is by working with and building
+      relationships that are founded on ideas that push us further. Developing stories that have yet to be heard with people
+      that live on their own terms. Our content and projects focus on producing genuine, clean, and thoughtful content, whether
+      that’s with videos or photography, or other mediums, to paint stories for businesses or people that are pushing limits
+      and reaching new heights. </p>
+  </div>
+
+
+  <!-- Big asset -->
+  <div class="video-fit Mau-display-container Mau-white" id="home">
+    <section>
+      <div class="video-wrap">
+        <iframe id="otherVideo" src="https://player.vimeo.com/video/323837184?autoplay=1&muted=1&loop=1" frameborder="0" webkitallowfullscreen
+          mozallowfullscreen allowfullscreen></iframe>
+        <!-- <video id="otherVideo" src="./assets/Blending_Traditional.mp4" playsinline autoplay muted loop></video> -->
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <div class="Mau-display-left Mau-text-white" style="padding:48px">
+      <span class="Mau-jumbo Mau-hide-small">Todos Ponen: </span>
+      <br>
+      <span class="Mau-xxlarge Mau-hide-large Mau-hide-medium">Todos Ponen:</span>
+      <br>
+      <span class="Mau-xxlarge">Un Dia en la Vida</span>
+
+    </div>
+  </div>
+
+
+  <!-- Med Assets -->
+  <div class="Mau-container Mau-light-grey" style="padding:128px 16px">
+    <div class="Mau-row-padding">
+      <div class="Mau-col m6">
+        <img class="Mau-image Mau-round-large" src="./assets/mixpic.png" alt="MxxdAsset1" width="700" height="394">
+      </div>
+      <div class="Mau-col m6">
+        <img class="Mau-image Mau-round-large" src="./assets/mixpic2.png" alt="MxxdAsset1" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+  <!-- Big business section -->
+  <div class="Mau-container Mau-darkest-grey" style="padding:128px 16px" id="value">
+    <h3 class="Mau-center Mau-xxlarge">WHAT WE DO</h3>
+    <div class="Mau-row-padding Mau-center" style="margin-top:64px">
+      <div class="Mau-quarter">
+        <i class="fa fa-pencil Mau-margin-bottom Mau-jumbo Mau-center"></i>
+        <p class="Mau-large">
+          <b>PRE-PRODUCTION</b>
+        </p>
+        <p>Building concepts, narratives, and evoking the proper emotions is what we do. To do that we ask you about your business.
+          We are dedicated to efficiency and a genuine understanding of your needs. These meetings are the bread and butter
+          of meeting your expectations.</p>
+      </div>
+      <div class="Mau-quarter">
+        <i class="fa fa-film Mau-margin-bottom Mau-jumbo"></i>
+        <p class="Mau-large">
+          <b>FILM PRODUCTION</b>
+        </p>
+        <p>In this stage we hire talent, crew and plan the shoot. Religiously. We have a process we can depend on. Which means
+          that sometimes we leave room for flexibility and creative spontaneity depending on the conditions of the work.
+        </p>
+      </div>
+      <div class="Mau-quarter">
+        <i class="fa fa-magic Mau-margin-bottom Mau-jumbo"></i>
+        <p class="Mau-large">
+          <b>POST-PRODUCTION</b>
+        </p>
+        <p>This is where we breathe life into your piece. We mix/master audio, color-correct, and edit. We are all very aware
+          of the boring, cheesy content that all companies fear. That is why we exceed industry standards when putting the
+          finishing touches and deliver you the final in the best format for your desired platform</p>
+      </div>
+      <div class="Mau-quarter">
+        <i class="fa fa-camera-retro Mau-margin-bottom Mau-jumbo"></i>
+        <p class="Mau-large">
+          <b>PHOTOGRAPHY</b>
+        </p>
+        <p>We also offer professional photography services for social media, advertising, or personal branding. We specialize
+          in portrait, lifestyle and travel/documentary photography.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Work Section -->
+  <div class="Mau-container" style="padding:128px 16px" id="work">
+    <h3 class="Mau-center">OUR WORK</h3>
+    <p class="Mau-center Mau-large">What we've done for people</p>
+
+    <div class="Mau-row-padding" style="margin-top:64px">
+      <div class="Mau-col l3 m6">
+        <img src="./assets/rfrsh_thumbnail.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+      <div class="Mau-col l3 m6">
+        <img src="./assets/Malikball.png" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+      <div class="Mau-col l3 m6">
+        <img src="./assets/speaker.png" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+      <div class="Mau-col l3 m6">
+        <img src="./assets/taipei2.jpg" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+    </div>
+
+    <div class="Mau-row-padding Mau-section">
+      <div class="Mau-col l3 m6">
+        <img src="./assets/shelia.png" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+      <div class="Mau-col l3 m6">
+        <img src="./assets/nwafw.png" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+      <div class="Mau-col l3 m6">
+        <img src="./assets/reyes.png" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+      <div class="Mau-col l3 m6">
+        <img src="./assets/goodforsomething.png" style="width:100%" onclick="onClick(this)" class="Mau-hover-opacity" alt="A Description here">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="Mau-modal Mau-black" onclick="this.style.display='none'">
+    <span class="Mau-button Mau-xxlarge Mau-black Mau-padding-large Mau-display-topright" title="Close Modal Image">×</span>
+    <div class="Mau-modal-content Mau-animate-zoom Mau-center Mau-transparent Mau-padding-64">
+      <img id="img01" class="Mau-image">
+      <p id="caption" class="Mau-opacity Mau-large"></p>
+    </div>
+  </div>
+
+  <!-- big asset -->
+  <div class="video-fit Mau-display-container Mau-white" id="home">
+    <section>
+      <div class="video-wrap">
+        <iframe id="otherVideo" src="https://player.vimeo.com/video/270751356?autoplay=1&muted=1&loop=1" frameborder="0" webkitallowfullscreen
+          mozallowfullscreen allowfullscreen></iframe>
+        <!-- <video id="otherVideo" src="./assets/Blending_Traditional.mp4" playsinline autoplay muted loop></video> -->
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <div class="Mau-display-left Mau-text-white" style="padding:48px">
+      <span class="Mau-jumbo Mau-hide-small">Javier Trailer </span>
+      <br>
+      <span class="Mau-xxlarge Mau-hide-large Mau-hide-medium">Javier Trailer</span>
+      <br>
+      <span class="Mau-xxlarge">Traditions Barber Parlor</span>
+
+    </div>
+  </div>
+  <!-- <div style="height:100rem" class="Mau-display-container Mau-grayscale-min" id="home">
+    <section>
+      <div class="video-wrap">
+        <video id="otherVideo" src="./assets/un_dia.mp4" playsinline autoplay muted loop></video>
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <div class="Mau-display-left Mau-text-white" style="padding:48px">
+      <span class="Mau-jumbo Mau-hide-small">Un dia en la vida</span><br>
+      <span class="Mau-xxlarge Mau-hide-large Mau-hide-medium">Un dia en la vida</span><br>
+      <span class="Mau-xxlarge">Mi Tocaya</span>
+
+    </div>
+    <div class="Mau-display-bottomleft Mau-text-grey Mau-large" style="padding:24px 48px">
+
+      <i class="fa fa-volume-up Mau-hover-opacity" onclick="disableMute()"></i>
+      <i class="fa fa-volume-off Mau-hover-opacity" onclick="enableMute()"></i>
+
+    </div>
+  </div> -->
+
+
+
+  <!-- Team Section -->
+  <div class="Mau-container Mau-grey Mau-center" style="padding:128px 16px" id="team">
+    <h3 class="Mau-center">MEET THE CURATORS</h3>
+    <!-- <p class="Mau-center Mau-large">Aka the early movers</p> -->
+    <div class="Mau-row-padding" style="margin-top:64px">
+      <div class="Mau-col l3 m6 Mau-margin-bottom">
+        <div class="Mau-card">
+          <img src="./assets/Gabe.png" alt="Gabe" style="width:100%">
+          <div class="Mau-container Mau-white">
+            <h3>Gabrielle Cullier</h3>
+            <p class="Mau-opacity">CEO & Founder</p>
+            <p>Hi I am Gabe</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="Mau-col l3 m6 Mau-margin-bottom">
+        <div class="Mau-card">
+          <img src="./assets/gabe1.png" alt="Gabe" style="width:100%">
+          <div class="Mau-container Mau-white">
+            <h3>Gabe 1</h3>
+            <p class="Mau-opacity">Art Director</p>
+            <p>Hi I am Gabe 1</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="Mau-col l3 m6 Mau-margin-bottom">
+        <div class="Mau-card">
+          <img src="./assets/gabe2.png" alt="Gabe" style="width:100%">
+          <div class="Mau-container Mau-white">
+            <h3>Gabe 2</h3>
+            <p class="Mau-opacity">Web Designer</p>
+            <p>Hi I am Gabe 2</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="Mau-col l3 m6 Mau-margin-bottom">
+        <div class="Mau-card">
+          <img src="./assets/gabe3.png" alt="Gabe" style="width:100%">
+          <div class="Mau-container Mau-white">
+            <h3>Gabe 3</h3>
+            <p class="Mau-opacity">Designer</p>
+            <p>Hi I am Gabe 3</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social media asset -->
+  <h3 class="Mau-center" id="media">Social media</h3>
+  <p class="Mau-center Mau-large">Lets connect</p>
+  <div class="Mau-row Mau-grayscale-min">
+    <div class="Mau-quarter">
+      <a href="https://www.instagram.com/mxxdprints/" target="_blank">
+        <img src="./assets/ig10.png" style="width:100%" alt="Gabe wearing orange beanie">
+        <img src="./assets/ig11.png" style="width:100%" alt="Sky shot">
+        <img src="./assets/ig1.png" style="width:100%" alt="bar shot">
+      </a>
+    </div>
+
+    <div class="Mau-quarter">
+      <a href="https://www.instagram.com/mxxdprints/" target="_blank">
+        <img src="./assets/ig12.png" style="width:100%" alt="Charlie">
+        <img src="./assets/ig2.png" style="width:100%" alt="comida">
+        <img src="./assets/ig3.png" style="width:100%" alt="bar shot 2">
+      </a>
+    </div>
+
+    <div class="Mau-quarter">
+      <a href="https://www.instagram.com/mxxdprints/" target="_blank">
+        <img src="./assets/ig4.png" style="width:100%" alt="Gabe in LA">
+        <img src="./assets/ig5.png" style="width:100%" alt="clothing video">
+        <img src="./assets/ig6.png" style="width:100%" alt="DJ from Chicago">
+      </a>
+    </div>
+
+    <div class="Mau-quarter">
+      <a href="https://www.instagram.com/mxxdprints/" target="_blank">
+        <img src="./assets/ig7.png" style="width:100%" alt="Hawaii Sky">
+        <img src="./assets/ig8.png" style="width:100%" alt="Clothing line 2">
+        <img src="./assets/ig9.png" style="width:100%" alt="yellow-green img contrast">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="Mau-container Mau-content Mau-padding-64" style="max-width:800px" id="contact">
+    <h2 class="Mau-wide Mau-center">NOW WERE TALKING</h2>
+    <p class="Mau-opacity Mau-center">
+      <i>
+        We are always on the lookout for great collaborators—clients who are passionate about their products and customers, and talent
+        looking to do the best work of their lives.</i>
+    </p>
+    <div class="Mau-row Mau-padding-32">
+      <div class="Mau-col m6 Mau-large Mau-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chi-town, US
+        <br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 281 330 8004
+        <br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: HollaME@mail.com
+        <br>
+      </div>
+      <div class="Mau-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="Mau-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="Mau-half">
+              <input class="Mau-input Mau-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="Mau-half">
+              <input class="Mau-input Mau-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="Mau-input Mau-border" type="text" placeholder="Message" required name="Message">
+          <button class="Mau-button Mau-black Mau-section Mau-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="Mau-center Mau-black Mau-padding-64">
+    <a href="#home" class="Mau-button Mau-light-black" style="border-radius: 25px">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <p>© Mxxdprints 2019</p>
+
+
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+
+    // Mute / unmute logic //
+    var vid = document.getElementById("landingVideo" || "otherVideo");
+
+    function enableMute() {
+      vid.muted = true;
+    }
+
+    function disableMute() {
+      vid.muted = false;
+    }
+
+    //  var vid = document.getElementById("otherVideo");
+
+    //         function enableMute1() { 
+    //           vid.muted = true;
+    //         } 
+
+    //         function disableMute2() { 
+    //           vid.muted = false;
+    //         }
+  </script>
+
+</body>
+
+</html>

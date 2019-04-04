@@ -1,0 +1,1988 @@
+/* Comments */
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html,
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.Mau-serif {
+    font-family: serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.Mau-centerIMG {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Mau-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.Mau-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.Mau-table,
+.Mau-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.Mau-table-all {
+    border: 1px solid #ccc
+}
+
+.Mau-bordered tr,
+.Mau-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.Mau-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.Mau-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.Mau-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.Mau-hoverable tbody tr:hover,
+.Mau-ul.Mau-hoverable li:hover {
+    background-color: #ccc
+}
+
+.Mau-centered tr th,
+.Mau-centered tr td {
+    text-align: center
+}
+
+.Mau-table td,
+.Mau-table th,
+.Mau-table-all td,
+.Mau-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.Mau-table th:first-child,
+.Mau-table td:first-child,
+.Mau-table-all th:first-child,
+.Mau-table-all td:first-child {
+    padding-left: 16px
+}
+
+.Mau-btn,
+.Mau-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.Mau-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.Mau-btn,
+.Mau-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.Mau-disabled,
+.Mau-btn:disabled,
+.Mau-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.Mau-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.Mau-btn.Mau-disabled:hover,
+.Mau-btn:disabled:hover {
+    box-shadow: none
+}
+
+.Mau-badge,
+.Mau-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.Mau-badge {
+    border-radius: 50%
+}
+
+.Mau-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.Mau-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.Mau-ul li:last-child {
+    border-bottom: none
+}
+
+.Mau-tooltip,
+.Mau-display-container {
+    position: relative
+}
+
+.Mau-tooltip .Mau-text {
+    display: none
+}
+
+.Mau-tooltip:hover .Mau-text {
+    display: inline-block
+}
+
+.Mau-ripple:active {
+    opacity: 0.5
+}
+
+.Mau-ripple {
+    transition: opacity 0s
+}
+
+.Mau-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.Mau-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.Mau-dropdown-click,
+.Mau-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.Mau-dropdown-hover:hover .Mau-dropdown-content {
+    display: block
+}
+
+.Mau-dropdown-hover:first-child,
+.Mau-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.Mau-dropdown-hover:hover>.Mau-button:first-child,
+.Mau-dropdown-click:hover>.Mau-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.Mau-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.Mau-check,
+.Mau-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.Mau-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.Mau-bar-block .Mau-dropdown-hover,
+.Mau-bar-block .Mau-dropdown-click {
+    width: 100%
+}
+
+.Mau-bar-block .Mau-dropdown-hover .Mau-dropdown-content,
+.Mau-bar-block .Mau-dropdown-click .Mau-dropdown-content {
+    min-width: 100%
+}
+
+.Mau-bar-block .Mau-dropdown-hover .Mau-button,
+.Mau-bar-block .Mau-dropdown-click .Mau-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.Mau-main,
+#main {
+    transition: margin-left .4s
+}
+
+.Mau-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.Mau-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.Mau-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.Mau-center .Mau-bar {
+    display: inline-block;
+    width: auto
+}
+
+.Mau-bar .Mau-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.Mau-bar .Mau-dropdown-hover,
+.Mau-bar .Mau-dropdown-click {
+    position: static;
+    float: left
+}
+
+.Mau-bar .Mau-button {
+    white-space: normal
+}
+
+.Mau-bar-block .Mau-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.Mau-bar-block.Mau-center .Mau-bar-item {
+    text-align: center
+}
+
+.Mau-block {
+    display: block;
+    width: 100%
+}
+
+.Mau-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.Mau-container:after,
+.Mau-container:before,
+.Mau-panel:after,
+.Mau-panel:before,
+.Mau-row:after,
+.Mau-row:before,
+.Mau-row-padding:after,
+.Mau-row-padding:before,
+.Mau-cell-row:before,
+.Mau-cell-row:after,
+.Mau-clear:after,
+.Mau-clear:before,
+.Mau-bar:before,
+.Mau-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.Mau-col-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 25%;
+}
+
+.Mau-col,
+.Mau-half,
+.Mau-third,
+.Mau-twothird,
+.Mau-threequarter,
+.Mau-quarter {
+    float: left;
+    width: 100%
+}
+
+.Mau-col.s1 {
+    width: 8.33333%
+}
+
+.Mau-col.s2 {
+    width: 16.66666%
+}
+
+.Mau-col.s3 {
+    width: 24.99999%
+}
+
+.Mau-col.s4 {
+    width: 33.33333%
+}
+
+.Mau-col.s5 {
+    width: 41.66666%
+}
+
+.Mau-col.s6 {
+    width: 49.99999%
+}
+
+.Mau-col.s7 {
+    width: 58.33333%
+}
+
+.Mau-col.s8 {
+    width: 66.66666%
+}
+
+.Mau-col.s9 {
+    width: 74.99999%
+}
+
+.Mau-col.s10 {
+    width: 83.33333%
+}
+
+.Mau-col.s11 {
+    width: 91.66666%
+}
+
+.Mau-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:601px) {
+    .Mau-col.m1 {
+        width: 8.33333%
+    }
+
+    .Mau-col.m2 {
+        width: 16.66666%
+    }
+
+    .Mau-col.m3,
+    .Mau-quarter {
+        width: 24.99999%
+    }
+
+    .Mau-col.m4,
+    .Mau-third {
+        width: 33.33333%
+    }
+
+    .Mau-col.m5 {
+        width: 41.66666%
+    }
+
+    .Mau-col.m6,
+    .Mau-half {
+        width: 49.99999%
+    }
+
+    .Mau-col.m7 {
+        width: 58.33333%
+    }
+
+    .Mau-col.m8,
+    .Mau-twothird {
+        width: 66.66666%
+    }
+
+    .Mau-col.m9,
+    .Mau-threequarter {
+        width: 74.99999%
+    }
+
+    .Mau-col.m10 {
+        width: 83.33333%
+    }
+
+    .Mau-col.m11 {
+        width: 91.66666%
+    }
+
+    .Mau-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .Mau-col.l1 {
+        width: 8.33333%
+    }
+
+    .Mau-col.l2 {
+        width: 16.66666%
+    }
+
+    .Mau-col.l3 {
+        width: 24.99999%
+    }
+
+    .Mau-col.l4 {
+        width: 33.33333%
+    }
+
+    .Mau-col.l5 {
+        width: 41.66666%
+    }
+
+    .Mau-col.l6 {
+        width: 49.99999%
+    }
+
+    .Mau-col.l7 {
+        width: 58.33333%
+    }
+
+    .Mau-col.l8 {
+        width: 66.66666%
+    }
+
+    .Mau-col.l9 {
+        width: 74.99999%
+    }
+
+    .Mau-col.l10 {
+        width: 83.33333%
+    }
+
+    .Mau-col.l11 {
+        width: 91.66666%
+    }
+
+    .Mau-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.Mau-rest {
+    overflow: hidden
+}
+
+.Mau-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.Mau-content,
+.Mau-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.Mau-content {
+    max-width: 980px
+}
+
+.Mau-auto {
+    max-width: 1140px
+}
+
+.Mau-cell-row {
+    display: table;
+    width: 100%
+}
+
+.Mau-cell {
+    display: table-cell
+}
+
+.Mau-cell-top {
+    vertical-align: top
+}
+
+.Mau-cell-middle {
+    vertical-align: middle
+}
+
+.Mau-cell-bottom {
+    vertical-align: bottom
+}
+
+.Mau-hide {
+    display: none !important
+}
+
+.Mau-show-block,
+.Mau-show {
+    display: block !important
+}
+
+.Mau-show-inline-block {
+    display: inline-block !important
+}
+
+@media (max-width:1205px) {
+    .Mau-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width:600px) {
+    .Mau-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .Mau-modal {
+        padding-top: 30px
+    }
+
+    .Mau-dropdown-hover.Mau-mobile .Mau-dropdown-content,
+    .Mau-dropdown-click.Mau-mobile .Mau-dropdown-content {
+        position: relative
+    }
+
+    .Mau-hide-small {
+        display: none !important
+    }
+
+    .Mau-mobile {
+        display: block;
+        width: 100% !important
+    }
+
+    .Mau-bar-item.Mau-mobile,
+    .Mau-dropdown-hover.Mau-mobile,
+    .Mau-dropdown-click.Mau-mobile {
+        text-align: center
+    }
+
+    .Mau-dropdown-hover.Mau-mobile,
+    .Mau-dropdown-hover.Mau-mobile .Mau-btn,
+    .Mau-dropdown-hover.Mau-mobile .Mau-button,
+    .Mau-dropdown-click.Mau-mobile,
+    .Mau-dropdown-click.Mau-mobile .Mau-btn,
+    .Mau-dropdown-click.Mau-mobile .Mau-button {
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+    .Mau-modal-content {
+        width: 500px
+    }
+
+    .Mau-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .Mau-modal-content {
+        width: 900px
+    }
+
+    .Mau-hide-large {
+        display: none !important
+    }
+
+    .Mau-sidebar.Mau-collapse {
+        display: block !important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .Mau-hide-medium {
+        display: none !important
+    }
+}
+
+@media (max-width:992px) {
+    .Mau-sidebar.Mau-collapse {
+        display: none
+    }
+
+    .Mau-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .Mau-auto {
+        max-width: 100%
+    }
+}
+
+.Mau-top,
+.Mau-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.Mau-top {
+    top: 0
+}
+
+.Mau-bottom {
+    bottom: 0
+}
+
+.Mau-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.Mau-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.Mau-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.Mau-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.Mau-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.Mau-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.Mau-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.Mau-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.Mau-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.Mau-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.Mau-display-container:hover .Mau-display-hover {
+    display: block
+}
+
+.Mau-display-container:hover span.Mau-display-hover {
+    display: inline-block
+}
+
+.Mau-display-hover {
+    display: none
+}
+
+.Mau-display-position {
+    position: absolute
+}
+
+.Mau-circle {
+    border-radius: 50%
+}
+
+.Mau-round-small {
+    border-radius: 2px
+}
+
+.Mau-round,
+.Mau-round-medium {
+    border-radius: 4px
+}
+
+.Mau-round-large {
+    border-radius: 8px
+}
+
+.Mau-round-xlarge {
+    border-radius: 16px
+}
+
+.Mau-round-xxlarge {
+    border-radius: 32px
+}
+
+.Mau-row-padding,
+.Mau-row-padding>.Mau-half,
+.Mau-row-padding>.Mau-third,
+.Mau-row-padding>.Mau-twothird,
+.Mau-row-padding>.Mau-threequarter,
+.Mau-row-padding>.Mau-quarter,
+.Mau-row-padding>.Mau-col {
+    padding: 0 8px
+}
+
+.Mau-container,
+.Mau-panel {
+    padding: 0.01em 16px
+}
+
+.Mau-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.Mau-code,
+.Mau-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.Mau-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.Mau-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.Mau-card,
+.Mau-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.Mau-card-4,
+.Mau-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.Mau-spin {
+    animation: Mau-spin 2s infinite linear
+}
+
+@keyframes Mau-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.Mau-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.Mau-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.Mau-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.Mau-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.Mau-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.Mau-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.Mau-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.Mau-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.Mau-animate-input:focus {
+    width: 100% !important
+}
+
+.Mau-opacity,
+.Mau-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.Mau-opacity-off,
+.Mau-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.Mau-opacity-max {
+    opacity: 0.25
+}
+
+.Mau-opacity-min {
+    opacity: 0.75
+}
+
+.Mau-greyscale-max,
+.Mau-grayscale-max,
+.Mau-hover-greyscale:hover,
+.Mau-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.Mau-greyscale,
+.Mau-grayscale {
+    filter: grayscale(75%)
+}
+
+.Mau-greyscale-min,
+.Mau-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.Mau-sepia {
+    filter: sepia(75%)
+}
+
+.Mau-sepia-max,
+.Mau-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.Mau-sepia-min {
+    filter: sepia(50%)
+}
+
+.Mau-tiny {
+    font-size: 10px !important
+}
+
+.Mau-small {
+    font-size: 12px !important
+}
+
+.Mau-medium {
+    font-size: 15px !important
+}
+
+.Mau-large {
+    font-size: 18px !important
+}
+
+.Mau-xlarge {
+    font-size: 24px !important
+}
+
+.Mau-xxlarge {
+    font-size: 36px !important
+}
+
+.Mau-xxxlarge {
+    font-size: 48px !important
+}
+
+.Mau-jumbo {
+    font-size: 64px !important
+}
+
+.Mau-left-align {
+    text-align: left !important
+}
+
+.Mau-right-align {
+    text-align: right !important
+}
+
+.Mau-justify {
+    text-align: justify !important
+}
+
+.Mau-center {
+    text-align: center !important
+}
+
+.Mau-border-0 {
+    border: 0 !important
+}
+
+.Mau-border {
+    border: 1px solid #ccc !important
+}
+
+.Mau-border-top {
+    border-top: 1px solid #ccc !important
+}
+
+.Mau-border-bottom {
+    border-bottom: 1px solid #ccc !important
+}
+
+.Mau-border-left {
+    border-left: 1px solid #ccc !important
+}
+
+.Mau-border-right {
+    border-right: 1px solid #ccc !important
+}
+
+.Mau-topbar {
+    border-top: 6px solid #ccc !important
+}
+
+.Mau-bottombar {
+    border-bottom: 6px solid #ccc !important
+}
+
+.Mau-leftbar {
+    border-left: 6px solid #ccc !important
+}
+
+.Mau-rightbar {
+    border-right: 6px solid #ccc !important
+}
+
+.Mau-section,
+.Mau-code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.Mau-margin {
+    margin: 16px !important
+}
+
+.Mau-margin-top {
+    margin-top: 16px !important
+}
+
+.Mau-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.Mau-margin-left {
+    margin-left: 16px !important
+}
+
+.Mau-margin-right {
+    margin-right: 16px !important
+}
+
+.Mau-padding-small {
+    padding: 4px 8px !important
+}
+
+.Mau-padding {
+    padding: 8px 16px !important
+}
+
+.Mau-padding-large {
+    padding: 12px 24px !important
+}
+
+.Mau-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.Mau-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+}
+
+.Mau-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+.Mau-padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+}
+
+.Mau-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+.Mau-left {
+    float: left !important
+}
+
+.Mau-right {
+    float: right !important
+}
+
+.Mau-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.Mau-transparent,
+.Mau-hover-none:hover {
+    background-color: transparent !important
+}
+
+.Mau-hover-none:hover {
+    box-shadow: none !important
+}
+
+/* Colors */
+.Mau-amber,
+.Mau-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important
+}
+
+.Mau-aqua,
+.Mau-hover-aqua:hover {
+    color: #000 !important;
+    background-color: #00ffff !important
+}
+
+.Mau-blue,
+.Mau-hover-blue:hover {
+    color: #fff !important;
+    background-color: #2196F3 !important
+}
+
+.Mau-light-blue,
+.Mau-hover-light-blue:hover {
+    color: #000 !important;
+    background-color: #87CEEB !important
+}
+
+.Mau-brown,
+.Mau-hover-brown:hover {
+    color: #fff !important;
+    background-color: #795548 !important
+}
+
+.Mau-cyan,
+.Mau-hover-cyan:hover {
+    color: #000 !important;
+    background-color: #00bcd4 !important
+}
+
+.Mau-blue-grey,
+.Mau-hover-blue-grey:hover,
+.Mau-blue-gray,
+.Mau-hover-blue-gray:hover {
+    color: #fff !important;
+    background-color: #607d8b !important
+}
+
+.Mau-green,
+.Mau-hover-green:hover {
+    color: #fff !important;
+    background-color: #4CAF50 !important
+}
+
+.Mau-light-green,
+.Mau-hover-light-green:hover {
+    color: #000 !important;
+    background-color: #8bc34a !important
+}
+
+.Mau-indigo,
+.Mau-hover-indigo:hover {
+    color: #fff !important;
+    background-color: #3f51b5 !important
+}
+
+.Mau-khaki,
+.Mau-hover-khaki:hover {
+    color: #000 !important;
+    background-color: #f0e68c !important
+}
+
+.Mau-lime,
+.Mau-hover-lime:hover {
+    color: #000 !important;
+    background-color: #cddc39 !important
+}
+
+.Mau-orange,
+.Mau-hover-orange:hover {
+    color: #000 !important;
+    background-color: #ff9800 !important
+}
+
+.Mau-deep-orange,
+.Mau-hover-deep-orange:hover {
+    color: #fff !important;
+    background-color: #ff5722 !important
+}
+
+.Mau-pink,
+.Mau-hover-pink:hover {
+    color: #fff !important;
+    background-color: #e91e63 !important
+}
+
+.Mau-purple,
+.Mau-hover-purple:hover {
+    color: #fff !important;
+    background-color: #9c27b0 !important
+}
+
+.Mau-deep-purple,
+.Mau-hover-deep-purple:hover {
+    color: #fff !important;
+    background-color: #673ab7 !important
+}
+
+.Mau-red,
+.Mau-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.Mau-sand,
+.Mau-hover-sand:hover {
+    color: #000 !important;
+    background-color: #fdf5e6 !important
+}
+
+.Mau-teal,
+.Mau-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important
+}
+
+.Mau-yellow,
+.Mau-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+}
+
+.Mau-white,
+.Mau-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.Mau-black,
+.Mau-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.Mau-grey,
+.Mau-hover-grey:hover,
+.Mau-gray,
+.Mau-hover-gray:hover {
+    color: #000 !important;
+    background-color: #9e9e9e !important
+}
+
+.Mau-darkest-grey,
+.Mau-hover-darkest-grey:hover,
+.Mau-darkest-gray,
+.Mau-hover-darkest-gray:hover {
+    color: white !important;
+    background-color: #333333 !important
+}
+
+
+.Mau-light-grey,
+.Mau-hover-light-grey:hover,
+.Mau-light-gray,
+.Mau-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.Mau-dark-grey,
+.Mau-hover-dark-grey:hover,
+.Mau-dark-gray,
+.Mau-hover-dark-gray:hover {
+    color: #fff !important;
+    background-color: #616161 !important
+}
+
+.Mau-pale-red,
+.Mau-hover-pale-red:hover {
+    color: #000 !important;
+    background-color: #ffdddd !important
+}
+
+.Mau-pale-green,
+.Mau-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #ddffdd !important
+}
+
+.Mau-pale-yellow,
+.Mau-hover-pale-yellow:hover {
+    color: #000 !important;
+    background-color: #ffffcc !important
+}
+
+.Mau-pale-blue,
+.Mau-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+}
+
+.Mau-text-amber,
+.Mau-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.Mau-text-aqua,
+.Mau-hover-text-aqua:hover {
+    color: #00ffff !important
+}
+
+.Mau-text-blue,
+.Mau-hover-text-blue:hover {
+    color: #2196F3 !important
+}
+
+.Mau-text-light-blue,
+.Mau-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.Mau-text-brown,
+.Mau-hover-text-brown:hover {
+    color: #795548 !important
+}
+
+.Mau-text-cyan,
+.Mau-hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+
+.Mau-text-blue-grey,
+.Mau-hover-text-blue-grey:hover,
+.Mau-text-blue-gray,
+.Mau-hover-text-blue-gray:hover {
+    color: #607d8b !important
+}
+
+.Mau-text-green,
+.Mau-hover-text-green:hover {
+    color: #4CAF50 !important
+}
+
+.Mau-text-light-green,
+.Mau-hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+
+.Mau-text-indigo,
+.Mau-hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+
+.Mau-text-khaki,
+.Mau-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.Mau-text-lime,
+.Mau-hover-text-lime:hover {
+    color: #cddc39 !important
+}
+
+.Mau-text-orange,
+.Mau-hover-text-orange:hover {
+    color: #ff9800 !important
+}
+
+.Mau-text-deep-orange,
+.Mau-hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+
+.Mau-text-pink,
+.Mau-hover-text-pink:hover {
+    color: #e91e63 !important
+}
+
+.Mau-text-purple,
+.Mau-hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+
+.Mau-text-deep-purple,
+.Mau-hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+
+.Mau-text-red,
+.Mau-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.Mau-text-sand,
+.Mau-hover-text-sand:hover {
+    color: #fdf5e6 !important
+}
+
+.Mau-text-teal,
+.Mau-hover-text-teal:hover {
+    color: #009688 !important
+}
+
+.Mau-text-yellow,
+.Mau-hover-text-yellow:hover {
+    color: #d2be0e !important
+}
+
+.Mau-text-white,
+.Mau-hover-text-white:hover {
+    color: #fff !important
+}
+
+.Mau-text-black,
+.Mau-hover-text-black:hover {
+    color: #000 !important
+}
+
+.Mau-text-grey,
+.Mau-hover-text-grey:hover,
+.Mau-text-gray,
+.Mau-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+.Mau-text-light-grey,
+.Mau-hover-text-light-grey:hover,
+.Mau-text-light-gray,
+.Mau-hover-text-light-gray:hover {
+    color: #f1f1f1 !important
+}
+
+.Mau-text-dark-grey,
+.Mau-hover-text-dark-grey:hover,
+.Mau-text-dark-gray,
+.Mau-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+}
+
+.Mau-border-amber,
+.Mau-hover-border-amber:hover {
+    border-color: #ffc107 !important
+}
+
+.Mau-border-aqua,
+.Mau-hover-border-aqua:hover {
+    border-color: #00ffff !important
+}
+
+.Mau-border-blue,
+.Mau-hover-border-blue:hover {
+    border-color: #2196F3 !important
+}
+
+.Mau-border-light-blue,
+.Mau-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+}
+
+.Mau-border-brown,
+.Mau-hover-border-brown:hover {
+    border-color: #795548 !important
+}
+
+.Mau-border-cyan,
+.Mau-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+}
+
+.Mau-border-blue-grey,
+.Mau-hover-border-blue-grey:hover,
+.Mau-border-blue-gray,
+.Mau-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+}
+
+.Mau-border-green,
+.Mau-hover-border-green:hover {
+    border-color: #4CAF50 !important
+}
+
+.Mau-border-light-green,
+.Mau-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+}
+
+.Mau-border-indigo,
+.Mau-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+}
+
+.Mau-border-khaki,
+.Mau-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+}
+
+.Mau-border-lime,
+.Mau-hover-border-lime:hover {
+    border-color: #cddc39 !important
+}
+
+.Mau-border-orange,
+.Mau-hover-border-orange:hover {
+    border-color: #ff9800 !important
+}
+
+.Mau-border-deep-orange,
+.Mau-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+}
+
+.Mau-border-pink,
+.Mau-hover-border-pink:hover {
+    border-color: #e91e63 !important
+}
+
+.Mau-border-purple,
+.Mau-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+}
+
+.Mau-border-deep-purple,
+.Mau-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+}
+
+.Mau-border-red,
+.Mau-hover-border-red:hover {
+    border-color: #f44336 !important
+}
+
+.Mau-border-sand,
+.Mau-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+}
+
+.Mau-border-teal,
+.Mau-hover-border-teal:hover {
+    border-color: #009688 !important
+}
+
+.Mau-border-yellow,
+.Mau-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+}
+
+.Mau-border-white,
+.Mau-hover-border-white:hover {
+    border-color: #fff !important
+}
+
+.Mau-border-black,
+.Mau-hover-border-black:hover {
+    border-color: #000 !important
+}
+
+.Mau-border-grey,
+.Mau-hover-border-grey:hover,
+.Mau-border-gray,
+.Mau-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+.Mau-border-light-grey,
+.Mau-hover-border-light-grey:hover,
+.Mau-border-light-gray,
+.Mau-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+}
+
+.Mau-border-dark-grey,
+.Mau-hover-border-dark-grey:hover,
+.Mau-border-dark-gray,
+.Mau-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+}
+
+.Mau-border-pale-red,
+.Mau-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+}
+
+.Mau-border-pale-green,
+.Mau-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+}
+
+.Mau-border-pale-yellow,
+.Mau-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+}
+
+.Mau-border-pale-blue,
+.Mau-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
+}
